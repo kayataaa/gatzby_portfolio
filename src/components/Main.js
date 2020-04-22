@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-// import pic01 from '../images/pic01.jpg'
-// import pic02 from '../images/pic02.jpg'
-// import pic03 from '../images/pic03.jpg'
+import pig from '../assets/images/pig.jpg'
+import sea2 from '../assets/images/sea2.jpg'
+import bird from '../assets/images/bird.jpg'
 
 class Main extends React.Component {
   render() {
@@ -30,28 +30,25 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            {/* <img src={pic01} alt="" /> */}
+            <img src={pig} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            閲覧いただきありがとうございます☀️
+            このポートフォリオは かやた がgatzby frameworkで作成しました🐖
+          </p>
+          <h2>
+            サイトマップ
+          </h2>
+          <p>
+            WORK‥今まで関わった案件や、プログラミングスキルについて書かれています。
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            ABOUT‥かやたの性格などについて書いてあります。
           </p>
+          <p>
+            CONTACT‥かやたにメールが送れます。
+          </p>
+
           {close}
         </article>
 
@@ -64,22 +61,19 @@ class Main extends React.Component {
         >
           <h2 className="major">Work</h2>
           <span className="image main">
-            {/* <img src={pic02} alt="" /> */}
+            <img src={sea2} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            今までメディア系のサイト, EC, 受発注システムなどのプロダクトに関わってきました。
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            英語は話せませんが、簡単な文法を使って読み書きができます。（業務上で海外チームとのコミュニケーションができる）
+          </p>
+          <p>
+            技術スタックはRuby on Rails, Vue.js, slim, scssがメインです。実装例についてはこちらの<a href="https://www.wantedly.com/users/62760659" target="_blank">Wantedlyのページ</a>をご参照ください。
+          </p>
+          <p>
+            SEOで検索順位を改善した経験があります。詳しくは<a href="https://letterneginr.hateblo.jp/entry/2019/07/19/212927" target="_blank">こちらの記事</a>をご参照ください。
           </p>
           {close}
         </article>
@@ -93,16 +87,18 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            {/* <img src={pic03} alt="" /> */}
+            <img src={bird} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            2017年からエンジニアをしています。年齢は2020年4月現在、28歳です。
+          </p>
+          <p>
+            バイクに乗ってでかけるのが好きで、最近はひとりで日本茶を埼玉まで買いに行きました。
+            お酒が全然飲めません。
+          </p>
+          <p>
+            昔は社会福祉士をしたり、画家を目指したりしていました。
+            好きなものを素直に好きと表現できなかった反動が、割と如実に行動に現れていると思います。
           </p>
           {close}
         </article>
@@ -138,7 +134,7 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li>
+            {/* <li>
               <a
                 href="https://twitter.com/HuntaroSan"
                 className="icon fa-twitter"
@@ -155,10 +151,19 @@ class Main extends React.Component {
               <a href="https://codebushi.com" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
+            </li> */}
+            <li>
+              <a
+                href="https://github.com/ixap2i"
+                className="icon fa-github"
+                target="_blank"
+              >
+                <span className="label">GitHub</span>
+              </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/kayataaa"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
